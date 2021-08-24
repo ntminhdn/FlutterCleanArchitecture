@@ -1,0 +1,75 @@
+name: basecleanflutter
+
+packages:
+  - data/**
+  - domain/**
+  - config/**
+  - core/**
+  - shared/**
+  - web_app/**
+  - admin/**
+
+scripts:
+  pub_get_all:
+    run: pub global run melos exec --fail-fast "flutter pub get"
+    description: pub get all modules.
+
+  pub_get_data:
+    run: pub global run melos exec --fail-fast --scope="*data*" "flutter pub get"
+    description: pub get data module.
+
+  pub_get_domain:
+    run: pub global run melos exec --fail-fast --scope="*domain*" "flutter pub get"
+    description: pub get domain module.
+
+  pub_get_web_app:
+    run: pub global run melos exec --fail-fast --scope="*web_app*" "flutter pub get"
+    description: pub get web_app module.
+
+  pub_get_admin:
+    run: pub global run melos exec --fail-fast --scope="*admin*" "flutter pub get"
+    description: pub get admin module.
+
+  gen_build_all:
+    run: pub global run melos exec --fail-fast --depends-on="build_runner" "flutter packages pub run build_runner build --delete-conflicting-outputs"
+    description: build_runner build all modules.
+
+  gen_build_data:
+    run: pub global run melos exec --fail-fast --scope="*data*" --depends-on="build_runner" "flutter packages pub run build_runner build --delete-conflicting-outputs"
+    description: build_runner build data module.
+
+  gen_build_domain:
+    run: pub global run melos exec --fail-fast --scope="*domain*" --depends-on="build_runner" "flutter packages pub run build_runner build --delete-conflicting-outputs"
+    description: build_runner build domain module.
+
+  gen_build_web_app:
+    run: pub global run melos exec --fail-fast --scope="*web_app*" --depends-on="build_runner" "flutter packages pub run build_runner build --delete-conflicting-outputs"
+    description: build_runner build web_app module.
+
+  gen_build_admin:
+    run: pub global run melos exec --fail-fast --scope="*admin*" --depends-on="build_runner" "flutter packages pub run build_runner build --delete-conflicting-outputs"
+    description: build_runner build admin module.
+
+  gen_watch_all:
+    run: pub global run melos exec --fail-fast --depends-on="build_runner" "flutter packages pub run build_runner watch --delete-conflicting-outputs"
+    description: build_runner watch all modules.
+
+  gen_watch_data:
+    run: pub global run melos exec --fail-fast --scope="*data*" --depends-on="build_runner" "flutter packages pub run build_runner watch --delete-conflicting-outputs"
+    description: build_runner watch data module.
+
+  gen_watch_domain:
+    run: pub global run melos exec --fail-fast --scope="*domain*" --depends-on="build_runner" "flutter packages pub run build_runner watch --delete-conflicting-outputs"
+    description: build_runner watch domain module.
+
+  gen_watch_web_app:
+    run: pub global run melos exec --fail-fast --scope="*web_app*" --depends-on="build_runner" "flutter packages pub run build_runner watch --delete-conflicting-outputs"
+    description: build_runner watch web_app module.
+
+  gen_watch_admin:
+    run: pub global run melos exec --fail-fast --scope="*admin*" --depends-on="build_runner" "flutter packages pub run build_runner watch --delete-conflicting-outputs"
+    description: build_runner watch admin module.
+
+  run_web_app_develop:
+    run: pub global run melos exec --fail-fast --scope="*web_app*" "flutter run -t lib/main_dev.dart --flavor develop"
+    description: run web_app develop.

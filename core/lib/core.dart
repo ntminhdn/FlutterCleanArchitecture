@@ -1,0 +1,20 @@
+library core;
+
+export 'generated/l10n.dart';
+export 'src/base/base_controller.dart';
+export 'src/base/base_page.dart';
+export 'src/base/base_page.dart';
+export 'src/config/config.dart';
+export 'src/extensions/context_ext.dart';
+export 'src/helper/deeplink/deep_link.dart';
+export 'src/helper/validation/validator.dart';
+export 'src/ui/custom_view/button/app_button.dart';
+export 'src/ui/custom_view/decoration/common_shadow.dart';
+export 'src/ui/custom_view/text/form_error_text.dart';
+export 'src/ui/custom_view/text_field/primary_input_layout.dart';
+export 'src/ui/custom_view/view_group/toolbar.dart';
+export 'src/ui/resource/colors/app_colors.dart';
+export 'src/ui/resource/dimens/dimens.dart';
+export 'src/ui/resource/themes/app_text_styles.dart';
+export 'src/ui/resource/themes/app_themes.dart';
+export 'src/utils/view_utils.dart';

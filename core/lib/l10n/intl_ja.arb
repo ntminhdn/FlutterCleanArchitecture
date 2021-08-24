@@ -1,0 +1,17 @@
+{
+  "unexpected_error": "unexpected_error",
+  "error_email_is_incorrect": "error_email_is_incorrect",
+  "nickname_format_is_incorrect": "nickname_format_is_incorrect",
+  "password_format_is_incorrect": "password_format_is_incorrect",
+  "passwords_are_different": "passwords_are_different",
+  "emails_are_different": "emails_are_different",
+  "nick_name_is_required": "nick_name_is_required",
+  "login": "ログイン",
+  "server_problem_try_later": "server_problem_try_later",
+  "check_connection": "check_connection",
+  "server_down_error": "server_down_error",
+  "email": "メールアドレス",
+  "password": "パスワード",
+  "ok": "OK",
+  "logout": "Log Out"
+}
